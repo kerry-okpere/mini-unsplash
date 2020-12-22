@@ -1,0 +1,24 @@
+.landing{
+    /* margin: 60px; */
+    position: relative;
+}
+.landing__backdrop{
+    background-color: var(--backdropBg);
+    height: 250px;
+    width: 100%;
+    border-radius: 2px;
+}
+.landing__backdrop-content{
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    top: 35%;
+}
+.landing__backdrop-content-photo{
+    padding: 60px;
+    display: grid;
+    gap: 30px 80px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
