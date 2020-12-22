@@ -1,0 +1,25 @@
+.search{
+    background-color: var(--white);
+    padding: 1px 20px;
+    border-radius: var(--rounded);
+    border: 1px solid rgb(209, 213, 219);
+    box-shadow: var(--shadow);
+}
+.search__input{
+    border: 0px ;
+    width: 90%;
+    height: 55px;
+}
+.search__icon{
+    vertical-align: middle;
+    width: 18px;
+    margin-right: 20px;
+}
+.search__input:focus{
+    outline: none;
+}
+.search__input::placeholder{
+    font-weight: 600;
+    color: var(--textDark);
+    letter-spacing: 0px;
+}
