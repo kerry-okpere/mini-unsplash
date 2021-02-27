@@ -4,11 +4,25 @@
     </header>
     <div class="landing__backdrop-content">
       <Search />
-      <section class="landing__backdrop-content-photo">
-        <Placeholder v-for="i in 3" :key="i"/>
+      <!-- <section class="landing__backdrop-content-photo"> -->
+        <!-- <Placeholder v-for="i in 3" :key="i"/> -->
         <!-- <Photo /> -->
-      </section>
       
+        <div v-if="errMsg"> {{ errMsg }} </div>
+        <Suspense>
+          <template #default>
+            <section class="landing__backdrop-content-photo">
+              <Photo />
+            </section>
+          </template>
+          <template #fallback>
+            <section class="landing__backdrop-content-photo">
+              <Placeholder v-for="i in 6" :key="i"/>
+            </section>
+          </template>
+        </Suspense>
+        
+      <!-- </section> -->
     </div>
   </main>
 </template>
@@ -26,19 +40,6 @@ export default {
     Placeholder,
     Photo
   },
-  setup(props, context){
-    console.log('i was set upppppp')
-
-    return{}
-  },
-  created(){
-    console.log('i was set upppppp')
-  },
-  methods:{
-    fetchPhotos(){
-
-    }
-  }
 };
 </script>
 

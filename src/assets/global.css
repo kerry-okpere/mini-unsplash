@@ -4,6 +4,10 @@
     --white: white;
     --textDark: rgb(55, 65, 81);
     --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    --placeholderBg: #eee;
-    --placeholderCaption: #c4c4c4;
+    --placeholderBg: #f7f7f7;
+    --placeholderCaption: #ddd;
+    --long: 450px;
+    --medium: 375px;
+    --short: 300px;
+    --heading: 20px
 }

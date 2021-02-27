@@ -1,0 +1,23 @@
+figure{
+	margin: 0;
+	border-radius: var(--rounded);
+	position: relative; 
+	background-color: grey;
+}
+img{
+	width: 100%;
+	object-fit: cover;
+}
+figcaption{
+	position: absolute;
+	top: 80%;
+	padding: 0 20px;
+}
+.img_caption-name{
+	font-size: var(--heading);
+	margin:2px 0;
+	font-weight: 500;
+}
+.img_caption-location{
+	margin: 2px 0;
+}
